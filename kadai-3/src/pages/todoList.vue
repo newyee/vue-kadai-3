@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <h1>ToDoリスト</h1>
     <input type="radio" name="state" id="check_value_left"  value="すべて" checked @click="displayData">すべて
     <input type="radio" name="state" id="check_value_middle" value="作業中" @click="getWorkingStatus">作業中
@@ -18,7 +18,6 @@
     <input type="button" value="追加" class="input-btn" @click="addTask">
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -138,13 +137,6 @@ export default {
 }
 </script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 table{
   margin:0 auto;
 }
